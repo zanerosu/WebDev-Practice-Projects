@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta name ="viewport" content = "width=device-width, inital-scale=1.0"/>
+    <link rel="stylesheet" href="styles.css"/>
+  </head>
+  <body>
+      <h1 id="title">My Quick Survey Form</h1>
+      <p id="description">Thank you for taking the time to take this survey!</p>
+      <div class="Main_Form">
+      <form id="survey-form" method="post" action='https://register-demo.freecodecamp.org'>
+        <label for="name" id="name-label">Name:<input type="text" id="name" placeholder="Enter your name" required></label>
+        <label for="email" id="email-label">Email:<input type="email" id="email" placeholder="Enter your email" required/></label>
+        <label for="number" id="number-label">Age:<input type="number" id="number" min="12" max="120" placeholder="Age"/></label>
+        
+        <label for="dropdwon">What is your role?
+          <select id="dropdown">
+            <option value="" >Select One</option>
+            <option value="1">Student</option>
+            <option value="2">Instructor</option>
+            <option value="3">Other</option>
+          </select>
+        </label>
+
+        <label>Do you like this form?
+          <label><input type="radio" class="inline" value="Yes" name="choice" checked>Yes</label>
+          <label><input type="radio"  class="inline" value="No" name="choice">No</label>
+        </label>
+
+        <label>What could be better about the form?
+          <label><input class="inline" type="checkbox" value="Style"/>Style</label>
+          <label><input class="inline" type="checkbox" value="Layout"/>Layout</label>
+          <label><input class="inline" type="checkbox" value="Responsiveness"/>Responsiveness</label>
+        </label>
+
+        <label for="comments">
+          <textarea id="comments" placeholder="Enter any additional comments..."></textarea>
+        </label>
+
+        <button id="submit" type="submit">Submit</button>
+      </form>
+    </div>
+  </body>
+</html>
